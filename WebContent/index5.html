@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MOOOSAN</title>
+<link rel="stylesheet" href="./css/bootstrap.css">
+<link rel="stylesheet" href="./css/codinglearning.css">
+<link rel="icon" href="./images/favicon.png">
+
+<style type="text/css">
+	.jumbotron {
+		background-image: url("./images/jumbotron_main_edited.jpg");
+		background-size: cover;
+		text-shadow: 0.2em 0.2em 0.2em black;
+		color: white;
+	}
+</style>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.js"></script>
+
+</head>
+<body>
+
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">MOOOSAN</a>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="instructor.html">대표 소개</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							카테고리<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="products.html?productName=fashion">패션 / 잡화 / 화장품</a></li>
+							<li><a href="hobbies.html">사무 / 취미</a></li>
+						</ul>
+					</li>
+				</ul>
+			
+				<form class="navbar-form navbar-left">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="검색할 내용을 입력하세요"/>
+					</div>
+					<button type="button" class="btn btn-default">검색</button>
+				</form>
+				
+				<div class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							접속하기<span class="caret"></span> 
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="loginForm.html">로그인</a></li>
+							<li><a href="registerForm.html">회원가입</a></li>
+						</ul>
+					</li>
+				</div>
+				
+			</div>
+		
+		</div>
+	</nav>
+	
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="text-center">MOOOSAN</h1>
+			<p class="text-center">MOOOSAN는 라이프스타일을 전반적으로 취급하는 일상 속의 브랜드입니다.</p>
+			<p class="text-center">
+				<a class="btn btn-primary btn-lg" href="#" role="button">사이트 둘러보기</a>
+			</p>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4">
+				<h4>제품의 원료</h4>
+				<p>제품의 기본부터 어떠한 재료가 들어가는지<br/>모든 것을 투명하게 공개하고 지켜볼 수 있습니다!</p>
+				<p>
+					<a class="btn btn-default" data-target="#modal" data-toggle="modal">자세히 알아보기</a>
+				</p>
+			</div>
+			<div class="col-md-4">
+				<h4>제품 보증 정책</h4>
+				<p>친환경 라이프스타일을 지향하는<br/>MOOOSAN은 제품 보증도 남다릅니다.<br/>파트너님을 위한 다양한 솔루션이 마련되어 있습니다.</p>
+				<p><a class="btn btn-default" data-target="#modal2" data-toggle="modal">자세히 알아보기</a></p>
+			
+			</div>
+			<div class="col-md-4">
+				<h4>ECO Activities</h4>
+				<p>MOOOSAN의 모든 제품의 포장지와 태그는<br/>친환경 용지이며 다양한 친환경 제품을 연구하고 있습니다.</p>
+				<p><a class="btn btn-default" data-target="#modal3" data-toggle="modal">자세히 알아보기</a></p>		
+			</div>
+		</div>
+		<hr/>
+		
+	<!--
+		미디어(media)
+		미디어 객체 컴포넌트는 웹사이트에서 동영상, 사진 등을 글로 할께 보여주고자 할 때 사용하는 컴포넌트로 미디어 객체를 이용해서
+		댓글과 같은 각종 SNS용 컨텐츠를 개발할 수 있다.
+	-->
+		<div class="panel panel-primary">
+		
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<span class="glyphicon-pencil"></span>
+				</h3>
+			</div>
+		
+			<!-- 미디어 시작 -->
+			<div class="panel-body">
+				
+				<!-- 미디어 1 -->
+				<div class="media">
+					<div class="media-left">
+						<a href="products.html?productName=fashion">
+							<img class="media-object" alt="장바구니 이미지" src="./images/cart-outline.png" style="width: 100px; height: 100px;"/>
+						</a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">
+							<a href="products.html?productName=fashion">
+								MOOOSAN 제품 보러가기
+							</a>&nbsp;&nbsp;<span class="badge">New</span>
+						</h4>
+						문구, 잡화, 패션, 가구 등을 아울러<br/>
+						생활 속 다양한 제품들을 만나보실 수 있습니다.<br/>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="modal" id="modal" tabindex="1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						원자재의 생산부터 가정까지
+						<button class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body" style="text-align: center;">
+						MOOOSAN의 모든 제품의 원료의 가공 과정의<br/>
+						모든 것을 지켜볼 수 있으며<br/>
+						직접 환경에 어떠한 형식으로 환원되는지<br/>
+						여러분이 그것을 지켜봐주십시오!<br/>
+						<img src="./images/beans.jpg" id="imagepreview" style="width: 450px; height: 280px;"/>
+					</div>
+				</div>
+			</div>
+		</div> <!-- media 끝 -->
+	</div> <!-- container -->
+	
+	<div class="row">
+		<div class="modal" id="modal2" tabindex="1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						제품 보증 정책
+						<button class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body" style="text-align: center;">
+						MOOOSAN의 모든 제품은 구입 당일부터<br/>
+						1년까지 무상으로 A/S가 가능합니다!<br/>
+						친환경 제품으로써 소모품의 경우<br/>
+						적은 가격으로 리필도 가능하죠!<br/>
+						<img src="./images/warrenty.jpg" id="imagepreview" style="width: 300px; height: 300px;"/>
+					</div>
+				</div>
+			</div>
+		</div> <!-- media 끝 -->
+	</div> <!-- container -->
+	
+	<div class="row">
+		<div class="modal" id="modal3" tabindex="1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						엄격한 친환경 정책
+						<button class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body" style="text-align: center;">
+						MOOOSAN의 모든 제품은 완벽하게<br/>
+						재활용이 가능하며 탄소 배출량이 극히 적습니다.<br/>
+						<img src="./images/eco.png" id="imagepreview" style="width: 450px; height: 450px;"/>
+					</div>
+				</div>
+			</div>
+		</div> <!-- media 끝 -->
+	</div> <!-- container -->
+	
+
+	<footer style="background-color: #000000; color: #ffffff;">
+		<div class="container">
+			<br/>
+			<div class="row">
+			
+				<div class="col-sm-2" style="text-align: center;">
+					<h5>Copyright &copy;</h5>
+					<h5>홍길동(Hong gil dong))</h5>
+					<h5>본 사이트의 모든 이미지는 수정, 사용이 자유로운 이미지이며 상업적 이용이 불가능합니다.<br/>인물이 게재된 이미지는 명예가 실추될만한 왜곡 및 수정을 가하지 않는 것을 원칙으로 합니다.</h5>
+				</div>
+			
+				<div class="col-sm-4" style="text-align: center;">
+					<h5>대표자 소개</h5>
+					<h5>MOOOSAN의 대표 홍길동입니다.<br/>라이프스타일 플랫폼 MOOOSAN은<br/>고객님들의 일상을 풍부하게 하기 위해 노력하겠습니다.</h5>
+				</div>
+			
+				<div class="col-sm-2">
+				<h5 style="text-align: center;">네비게이션</h5>
+					<ul class="list-group">
+						<a href="index5.html" class="list-group-item">메인페이지</a>
+						<a href="instructor.html" class="list-group-item">대표 소개</a>
+						<a href="products.html?productName=fashion" class="list-group-item">제품</a>
+					</ul>
+				</div>
+			
+				<div class="col-sm-2">
+				<h5 style="text-align: center;">SNS</h5>
+					<ul class="list-group">
+						<a href="https://facebook.com" class="list-group-item">페이스북</a>
+						<a href="https://youtube.com" class="list-group-item">유튜브</a>
+						<a href="https://shopping.naver.com/" class="list-group-item">네이버쇼핑</a>
+					</ul>
+				</div>
+			
+				<!-- 2 -->
+				<div class="col-sm-2">
+					<h5 style="text-align: center;">
+						<span class="glyphicon glyphicon-ok"></span>&nbsp;by 홍길동
+					</h5>
+				</div>
+			
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

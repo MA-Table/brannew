@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/bootstrap.css">
+<link rel="stylesheet" href="./css/codinglearning.css">
+<link rel="icon" href="./images/favicon.png">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.js"></script>
+
+<title>MOOOSAN 사무 / 취미</title>
+</head>
+<body>
+
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index5.html">MOOOSAN</a>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="instructor.html">대표 소개</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							카테고리<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="products.html?productName=fashion">패션 / 잡화 / 화장품</a></li>
+							<li><a href="products.html?productName=hobbies">사무 / 취미</a></li>
+						</ul>
+					</li>
+				</ul>
+			
+				<form class="navbar-form navbar-left">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="검색할 내용을 입력하세요"/>
+					</div>
+					<button type="button" class="btn btn-default">검색</button>
+				</form>
+				
+				<div class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							접속하기<span class="caret"></span> 
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="loginForm.html">로그인</a></li>
+							<li><a href="registerForm.html">회원가입</a></li>
+						</ul>
+					</li>
+				</div>
+				
+			</div>
+		
+		</div>
+	</nav>
+	
+		
+	
+	<!-- ====================================================================================================== -->
+	<!-- lecture.html에 코딩하는 내용 -->
+	
+	<!--
+		리스트 그룹
+		리스트 그룹은 같은 성질을 가지는 목록을 담는 하나의 그룹을 의미하는 클래스로 각각의 정보는 자유롭게 링크를 가지는 형태로 들어갈 수 있다.
+		부트스트랩에서는 단순히 클래스로 지정해주면 즉시 사용이 가능하다.
+	 -->
+	
+	<div class="container">
+		<div class="row">
+			<ul class="list-group">
+				<a href="products.html" class="list-group-item">패션 / 잡화 / 화장품</a>
+				<a href="#" class="list-group-item active">사무 / 취미</a>
+			</ul>
+		</div>
+	</div>
+	
+	<!--
+		동영상 불러오기
+		부트스트랩은 자신의 웹 사이트에 유투브나 네이버 TV 등의 동영상을 불러오는 embed-response 클래스를 제공한다.
+		또한 자동으로 반응형 웹 디자인이 적용되어 굉장히 효율적으로 웹사이트를 구성할 수 있다.
+	-->
+		
+	<div class="container">
+		<div class="row">
+			<div class="embed-responsive embed-responsive-16by9 col-lg-12">
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wDfqXR_5yyQ"></iframe>
+			</div>
+		</div>
+	<div class="row">
+			<div class="col-md-4">
+				<h4>공구</h4>
+				<img class="media-object" alt="공구 이미지" src="./images/tools.jpeg" style="width: 100px; height: 150px;"/>
+			</div>
+			<div class="col-md-4">
+				<h4>주방용품</h4>
+				<img class="media-object" alt="주방용품 이미지" src="./images/kitchen.jpeg" style="width: 100px; height: 150px;"/>
+			</div>
+		</div>
+	</div>
+	<hr/>
+	
+	
+	
+	<!-- ====================================================================================================== -->
+	
+	
+	<footer style="background-color: #000000; color: #ffffff;">
+		<div class="container">
+			<br/>
+			<div class="row">
+			
+				<div class="col-sm-2" style="text-align: center;">
+					<h5>Copyright &copy;</h5>
+					<h5>홍길동(Hong gil dong))</h5>
+					<h5>본 사이트의 모든 이미지는 수정, 사용이 자유로운 이미지이며 상업적 이용이 불가능합니다.<br/>인물이 게재된 이미지는 명예가 실추될만한 왜곡 및 수정을 가하지 않는 것을 원칙으로 합니다.</h5>
+				</div>
+			
+				<div class="col-sm-4" style="text-align: center;">
+					<h5>대표자 소개</h5>
+					<h5>MOOOSAN의 대표 홍길동입니다.<br/>라이프스타일 플랫폼 MOOOSAN은<br/>고객님들의 일상을 풍부하게 하기 위해 노력하겠습니다.</h5>
+				</div>
+			
+				<div class="col-sm-2">
+				<h5 style="text-align: center;">네비게이션</h5>
+					<ul class="list-group">
+						<a href="index5.html" class="list-group-item">메인페이지</a>
+						<a href="instructor.html" class="list-group-item">대표 소개</a>
+						<a href="products.html?productName=fashion" class="list-group-item">제품</a>
+					</ul>
+				</div>
+			
+				<div class="col-sm-2">
+				<h5 style="text-align: center;">SNS</h5>
+					<ul class="list-group">
+						<a href="https://facebook.com" class="list-group-item">페이스북</a>
+						<a href="https://youtube.com" class="list-group-item">유튜브</a>
+						<a href="https://shopping.naver.com/" class="list-group-item">네이버쇼핑</a>
+					</ul>
+				</div>
+			
+				<!-- 2 -->
+				<div class="col-sm-2">
+					<h5 style="text-align: center;">
+						<span class="glyphicon glyphicon-ok"></span>&nbsp;by 홍길동
+					</h5>
+				</div>
+			
+			</div>
+		</div>
+	</footer>
+	
+	
+	
+</body>
+</html>
